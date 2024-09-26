@@ -1,0 +1,48 @@
+@font-face {
+    font-family: IntroRust;
+    src: url(/Fontes/introrust-base.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: IntroRust;
+}
+
+#menu{
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#conteúdo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#botões{
+    display: flex;
+    margin: 20px;
+}
+
+.imitabotão{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.imitabotão:hover{
+    color: rgb(148, 148, 148);
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: large;
+}
+
+#logo{
+    width: 200px;
+    height: 100px;
+}
