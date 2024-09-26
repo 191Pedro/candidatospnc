@@ -1,0 +1,154 @@
+@font-face {
+    font-family: IntroRust;
+    src: url(Fontes/introrust-base.otf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(Fontes/MontserratMedium.otf);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: IntroRust;
+    background-color: #ffe388;
+}
+p{
+    border: 0;
+    padding: 0;
+    font-family: MontserratMedium;
+    font-size: larger;
+    margin: 10px;
+    font-weight: 600;
+}
+h2{
+    border: 0;
+    padding: 0;
+    font-family: MontserratMedium;
+    margin: 10px;
+}
+img{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    height: 9.3cm;
+    width: 6.3cm;
+}
+#menu{
+    height: 102px;
+    background-color: #0e0d0b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#conteúdo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#botões{
+    display: flex;
+    margin: 20px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.imitabotão{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imitabotão:hover{
+    animation: piscar1 0.5s infinite alternate;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: large;
+}
+@keyframes piscar1{
+    from{
+        color: #ffefba;
+    }
+    to{
+        color: #ffe388;
+    }
+}
+
+#logo{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 0px;
+    border: 0px;
+    width: 70px;
+    height: 70px;
+}
+
+/*Candidatos*/
+
+.conteúdogeral{
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+}
+
+#candidatosgerais{
+    display: grid;
+    width: 700px;
+}
+
+.candidatos{
+    display: flex;
+    background-color: #ffe7b5;
+    height: 400px;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+/*Candidato 1*/
+
+#CAN1{
+    margin: 24px;
+    margin-right: 0px;
+}
+
+/*Candidato 2*/
+ 
+#CAN2{
+    margin: 24px;
+    margin-right: 0px;
+}
+
+/*Candidato 3*/
+ 
+#CAN3{
+    margin: 24px;
+    margin-right: 0px;
+}
+
+/*Candidato 4*/
+ 
+#CAN4{
+    margin: 24px;
+    margin-right: 0px;
+}
