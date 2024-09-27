@@ -1,0 +1,284 @@
+@font-face {
+    font-family: IntroRust;
+    src: url(/Fontes/introrust-base.otf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(/Fontes/MontserratMedium.otf);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.entrada{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    background-color: #0e0d0b;
+}
+
+#imgentrada{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.botão{
+    position: absolute;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffefba;
+    padding: 8px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+}
+.botão:hover{
+    color: #ffffff;
+    background-color: #0e0d0b;
+    transition: 0.2s;
+}
+#chk{
+    margin: 0;
+    padding: 8px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 100px;
+    opacity: 0;
+}
+
+@keyframes sair{
+    from{
+        z-index: -2;
+    }
+    to{
+        z-index: -2;
+    }
+}
+@keyframes sair2{
+    from{
+        position: relative
+    }
+    to{
+        position: relative;
+    }
+}
+@keyframes sair3 {
+    from{
+        color: #ffffff;
+    }
+    to{
+        color: #ffe388;
+    }
+}
+@keyframes sair4 {
+    from{
+        background-color: #0e0d0b;
+    }
+    to{
+        background-color: #ffe388;
+    }
+}
+
+#body.animação{
+    animation: sair2;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    .entrada{
+        background: none;
+        transition: 0.5s;
+        transition-delay: 1.5s;
+        animation: sair;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    #imgentrada{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        width: 70px;
+        height: 70px;
+        margin-top: 14px;
+        margin-left: 15px;
+        transition-duration: 1.4s;
+        transition-timing-function: ease-in-out;
+    }
+    .botão{
+        top: 110%;
+        transition: 3s;
+        color: #ffffff;
+        background-color: #0e0d0b;
+        animation: sair3 0.07s infinite ease-in-out alternate-reverse;
+    }
+    #menu, .conteúdogeral{
+        z-index: 2;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: IntroRust;
+    background-color: #ffe388;
+    position: fixed;
+}
+p{
+    border: 0;
+    padding: 0;
+    font-family: MontserratMedium;
+    font-size: larger;
+    margin: 10px;
+    font-weight: 600;
+}
+h2{
+    border: 0;
+    padding: 0;
+    font-family: MontserratMedium;
+    margin: 10px;
+}
+img{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    height: 9.3cm;
+    width: 6.3cm;
+}
+#menu{
+    height: 102px;
+    background-color: #0e0d0b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#conteúdo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#botões{
+    display: flex;
+    margin: 20px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.imitabotão{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imitabotão:hover{
+    animation: piscar1 0.5s infinite alternate;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: large;
+}
+@keyframes piscar1{
+    from{
+        color: #ffefba;
+    }
+    to{
+        color: #ffe388;
+    }
+}
+
+#logo{
+    margin-top: 7px;
+    padding: 0px;
+    border: 0px;
+    width: 70px;
+    height: 70px;
+    font-size: small;
+}
+
+.propo, .parti{
+    display: none;
+}
+
+.conteúdogeral{
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #ffe388;
+}
+
+/*Candidatos*/
+
+#intermediária1{
+    display: grid;
+    width: 700px;
+}
+
+.candidatos{
+    display: flex;
+    background-color: #ffe7b5;
+    height: 400px;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.CAN{
+    margin: 24px;
+    margin-right: 0px;
+}
+
+/*Propostas*/
+
+#intermediária2{
+    display: grid;
+    width: 600px;
+}
+
+.propostas{
+    display: flex;
+    background-color: #ffe7b5;
+    height: 400px;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.PRO{
+    margin: 100px;
+    margin-right: 0px;
+}
