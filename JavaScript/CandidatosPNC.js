@@ -6,6 +6,10 @@ const aperte = document.querySelector('.botão')
 aperte.addEventListener('click', () =>{
     document.body.classList.toggle('animação');
 })
+const logo = document.querySelector('.logo')
+logo.addEventListener('click', () =>{
+    document.body.classList.toggle('animação');
+})
 
 function go(a,b)
 {
