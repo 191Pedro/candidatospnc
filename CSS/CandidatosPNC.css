@@ -6,6 +6,14 @@
     font-family: MontserratMedium;
     src: url(Fontes/MontserratMedium.otf);
 }
+@font-face {
+    font-family: LatoMedium;
+    src: url(Fontes/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: LatoBlack;
+    src: url(Fontes/Lato-Black.ttf);
+}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -164,11 +172,15 @@ img{
     height: 9.3cm;
     width: 6.3cm;
 }
+b{
+    font-family: LatoBlack;
+}
 #menu{
     height: 102px;
     background-color: #0e0d0b;
     color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -190,10 +202,10 @@ img{
 
 .imitabotão{
     display: flex;
-    margin: 10px;
-    padding: 10px;
     transition: 0.5s;
     cursor: pointer;
+    padding: 10px;
+    margin: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -204,6 +216,7 @@ img{
     margin-right: 25px;
     font-size: large;
 }
+
 @keyframes piscar1{
     from{
         color: #ffefba;
@@ -213,13 +226,14 @@ img{
     }
 }
 
-#logo{
-    margin-top: 7px;
+.logo{
+    margin-top: 14px;
     padding: 0px;
     border: 0px;
     width: 70px;
     height: 70px;
     font-size: small;
+    cursor: pointer;
 }
 
 .propo, .parti{
@@ -235,6 +249,22 @@ img{
     height: 100%;
     justify-content: center;
     background-color: #ffe388;
+}
+.título{
+    display: flex;
+    background-color: #ffe7b5;
+    height: 50px;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+}
+#intermediária1 .título{
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /*Candidatos*/
@@ -281,4 +311,29 @@ img{
 .PRO{
     margin: 100px;
     margin-right: 0px;
+}
+
+/*Partido*/
+
+#intermediária3{
+    display: grid;
+    width: 600px;
+}
+
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffe7b5;
+    text-justify: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sobre p, .sobre h2{
+    font-family: LatoMedium;
 }
